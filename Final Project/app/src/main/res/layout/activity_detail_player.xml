@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.DetailPlayer.DetailPlayer">
+    <ImageView
+        android:id="@+id/iv_player_detail_photo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:src="@drawable/berdleno"
+        />
+<TextView
+    android:id="@+id/tv_player_detail_name"
+    android:layout_width="wrap_content"
+    android:text="Jakarta"
+    android:textSize="20sp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Negara"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_player_detail_nations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indonesia"
+                android:layout_margin="10dp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posisi"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_player_detail_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Midfield"
+                android:layout_margin="10dp"
+                />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Pemain"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/tv_player_detail_deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/large_text"
+        android:layout_margin="5dp"/>
+</LinearLayout>
+</ScrollView>

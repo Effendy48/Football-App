@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_match_result"
+            android:icon="@drawable/soccer"
+            android:title="Matchs Result" />
+        <item
+            android:id="@+id/nav_match_schedule"
+            android:icon="@drawable/calendar"
+            android:title="Match Schedule" />
+        <item
+            android:id="@+id/nav_teams"
+            android:icon="@drawable/team"
+            android:title="Teams" />
+        <item
+            android:id="@+id/nav_search_teams"
+            android:icon="@drawable/search"
+            android:title="Search Teams" />
+        <item
+            android:id="@+id/nav_search_matchs"
+            android:icon="@drawable/search"
+            android:title="Search Matchs"
+            />
+    </group>
+
+    <item android:title="Favorite">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                android:id="@+id/nav_favorite_matchs"
+                android:icon="@drawable/ic_star_black_24dp"
+                android:title="Favorite Matchs" />
+                <item
+                android:id="@+id/nav_favorite_teams"
+                android:icon="@drawable/ic_stars_black_24dp"
+                android:title="Favorite Teams" />
+
+             </group>
+        </menu>
+    </item>
+
+</menu>
